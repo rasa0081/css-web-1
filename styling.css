@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  color: aqua;
+  text-decoration: none;
+}
+a:hover{
+  color: rgb(0, 112, 75);
+}
+a:visited{
+  color: bisque;
+}
+
+.header-one{
+  display: flex;
+  /* justify-content: center; */
+  /* height: 25vh; */
+  background-color: #000000;
+  color: aliceblue;
+  flex-direction: column;
+}
+.title-one{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: -30px;
+}
+.logo{
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 15px;
+}
+.loogo{
+  width: 50px;
+  border-radius: 10%;
+}
+.ul-parent{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+  list-style: none;
+}
+main{
+  background: rgb(19, 19, 19);
+  color: azure;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+hr{
+  color: aliceblue;
+  border-width: 5px;
+}
+.main-container{
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  
+}
+.main-img-one{
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+  flex-direction: row;
+}
+.img-jdm-cars{
+  width: 500px;
+}
+.main-p-one{
+margin: 50px;
+}
+.cards-container{
+  display: flex;
+  justify-content: center;
+  
+  
+}
+.card-one-container{
+  display: flex;
+  width: 250px;
+  flex-direction: column;
+  background-color: rgb(45, 43, 43);
+  padding: 10px;
+  margin: 50px;
+  align-items: center;
+  text-align: center;
+}
+.supra{
+  width: 200px;
+}
+.card-header-one{
+  background-color:rgb(45, 43, 43);
+}
+/* ----------------------------------------------- */
+@media only screen and (max-width: 1000px){
+  .ul-parent{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+   
+  }
+  .cards-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 700px){
+  .img-jdm-cars{
+    width: 50%;
+  }
+  .main-p-one-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 400px){
+  .card-one-container{
+    width: 80%;
+  }
+}
